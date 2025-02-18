@@ -115,16 +115,13 @@ h2 {
   position: fixed;
   flex-direction: column;
   width: 100%;
-  z-index: 100;
-}
-.navBar .navBarOne,
-.navBar .navBarTwo {
-  justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
+  z-index: 1000;
 }
 .navBar .navBarOne {
   background-color: var(--SecondaryColor);
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
 }
 .navBar .navBarOne .icon:hover {
   color: var(--PrimaryColor);
@@ -145,16 +142,18 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1rem;
+  top: 3rem;
   position: fixed;
   transition: 0.3s ease-in-out;
+  padding: 1rem;
+  width: 100%;
 }
 .navBar .navBarTwo .logoDiv .logo {
-  width: 50%;
+  width: 20%;
 }
 .navBar .headerWithBg {
   background: var(--SecondaryColor);
-  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 @media screen and (max-width: 768px) {
   .navBar .navBarMenu {

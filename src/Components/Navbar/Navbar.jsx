@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 //imported icons
 import { SiConsul } from 'react-icons/si'
@@ -17,7 +17,18 @@ const Navbar = () => {
   //   setActive('navBarMenu showNavBar')
   // }
   const [toggle, setToggle] = useState(false);
-  
+
+  const [nobg, addbg] = useState('navBarTwo');
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
+      addbg('navBarTwo headerWithBg flex')
+    } else {
+      addbg('navBarTwo flex')
+    }
+  }
+  window.addEventListener('scroll', addBgColor)
+
+
 
   return (
     <div className='navBar flex'>
@@ -34,31 +45,35 @@ const Navbar = () => {
           <span>Sign Out</span>
         </div>
       </div>
-      <div className="navBarTwo flex">
+
+      <div className={nobg}>
         <div className="logoDiv">
           <img src={logo} className='logo' />
         </div>
-          <div className={`navBarMenu ${toggle ? 'showNavBar' : ''}`}>
-          <ul className="menu flex">
-            <li onClick={() => setToggle(false)} className="listItem">Home</li>
-            <li onClick={() => setToggle(false)} className="listItem">About</li>
-            <li onClick={() => setToggle(false)} className="listItem">Offers</li>
-            <li onClick={() => setToggle(false)} className="listItem">Seats</li>
-            <li onClick={() => setToggle(false)} className="listItem">Destinations</li>
-          </ul>
-          <button onClick={() => setToggle(false)} className='btn flex btnOne'>
-            Contact
-          </button>
+
+
+        <button className='btn flex btnTwo'>
+          Contact
+        </button>
+
+        <div className='toggleIcon' onClick={() => setToggle(!toggle)}>
+          <CgMenuGridO className='icon' />
         </div>
-
-          <button className='btn flex btnTwo'>
-            Contact
-          </button>
-
-          <div className='toggleIcon' onClick={()=> setToggle(!toggle)}>
-            <CgMenuGridO className='icon'/>
-          </div>
       </div>
+
+      <div className={`navBarMenu ${toggle ? 'showNavBar' : ''}`}>
+        <ul className="menu flex">
+          <li onClick={() => setToggle(false)} className="listItem">Home</li>
+          <li onClick={() => setToggle(false)} className="listItem">About</li>
+          <li onClick={() => setToggle(false)} className="listItem">Offers</li>
+          <li onClick={() => setToggle(false)} className="listItem">Seats</li>
+          <li onClick={() => setToggle(false)} className="listItem">Destinations</li>
+        </ul>
+        <button onClick={() => setToggle(false)} className='btn flex btnOne'>
+          Contact
+        </button>
+      </div>
+      
     </div>
   )
 }

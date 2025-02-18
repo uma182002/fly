@@ -128,17 +128,13 @@ h2 {
     position: fixed;
     flex-direction: column;
     width: 100%;
-    z-index: 100;
-
-    .navBarOne,
-    .navBarTwo {
-        justify-content: space-between;
-        padding: 1rem;
-        width: 100%;
-    }
+    z-index: 1000; 
 
     .navBarOne {
         background-color: var(--SecondaryColor);
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
 
         .icon:hover {
             color: var(--PrimaryColor);
@@ -166,19 +162,26 @@ h2 {
         align-items: center;
         justify-content: space-between;
         top: 3rem;
-        padding: 1.5rem 1rem;
         position: fixed;
         transition: .3s ease-in-out;
-        z-index: 1;
- 
+        padding: 1rem;
+        width: 100%;
+
 
         .logoDiv {
-            
             .logo {
-                width: 50%;
+                width: 20%;
             }
+        }
+        
     }
+
+    .headerWithBg {
+        background: var(--SecondaryColor);
+        box-shadow:  rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
+
+    
 
     @media screen and (max-width: 768px) {
         .navBarMenu {
@@ -186,7 +189,7 @@ h2 {
             background-color: var(--SecondaryColor);
             padding: 1.5rem;
             border-radius: 10px;
-            top: 5rem;
+            top: 8rem;
             right: -50%;
             width: 80%;
             transform: translateX(50%);
