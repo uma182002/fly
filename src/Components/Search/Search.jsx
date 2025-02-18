@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { RiAccountPinCircleLine } from 'react-icons/ri'
+import { RxCalendar } from 'react-icons/rx'
 
 const Search = () => {
   return (
@@ -31,7 +32,7 @@ const Search = () => {
             </div>
           </div>
 
-          {/* <div className="singleInput flex">
+          <div className="singleInput flex">
             <div className="iconDiv">
               <RiAccountPinCircleLine className='icon' />
             </div>
@@ -40,7 +41,29 @@ const Search = () => {
               <h4>Travelers</h4>
               <input type='text' placeholder='Add guests'/>
             </div>
-          </div> */}
+          </div>
+
+          <div className="singleInput flex">
+            <div className="iconDiv">
+              <RxCalendar className='icon' />
+            </div>
+
+            <div className='texts'>
+              <h4>Check In</h4>
+              <input type='text' placeholder='Add date'/>
+            </div>
+          </div>
+
+          <div className="singleInput flex">
+            <div className="iconDiv">
+              <RxCalendar className='icon' />
+            </div>
+
+            <div className='texts'>
+              <h4>Check Out</h4>
+              <input type='text' placeholder='Add date'/>
+            </div>
+          </div>
 
         </div>
       </div>

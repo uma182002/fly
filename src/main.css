@@ -145,7 +145,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 3rem;
   padding: 1.5rem 1rem;
   position: fixed;
   transition: 0.3s ease-in-out;
@@ -153,13 +152,17 @@ h2 {
 .navBar .navBarTwo .logoDiv .logo {
   width: 50%;
 }
+.navBar .headerWithBg {
+  background: var(--SecondaryColor);
+  padding: 0.5rem 1rem;
+}
 @media screen and (max-width: 768px) {
   .navBar .navBarMenu {
     position: absolute;
     background-color: var(--SecondaryColor);
     padding: 1.5rem;
     border-radius: 10px;
-    top: 5rem;
+    top: 8rem;
     right: -50%;
     width: 80%;
     transform: translateX(50%);
@@ -233,4 +236,75 @@ h2 {
   width: 100%;
   top: -20%;
   left: -10%;
+}
+
+.search .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+.search .sectionContainer .btns {
+  background: var(--SecondaryColor);
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin: auto;
+}
+.search .sectionContainer .btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+}
+.search .sectionContainer .btns .singleBtn:hover {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.search .sectionContainer .btns .active {
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.search .sectionContainer .searchInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--SecondaryColor);
+  margin-right: 1rem;
+}
+.search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+  color: var(--blackColor);
+  opacity: 0.7;
+}
+.search .sectionContainer .searchInputs .singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
