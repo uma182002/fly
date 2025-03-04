@@ -380,7 +380,7 @@ h2 {
 
 .support {
     .sectionContainer {
-        .titlesDiv{
+        .titlesDiv {
             text-align: center;
 
             small {
@@ -391,6 +391,7 @@ h2 {
                 line-height: 1.5rem;
             }
         }
+
         .infoDiv {
             margin-top: 2rem;
             gap: 1.5rem;
@@ -399,7 +400,7 @@ h2 {
                 gap: 1.5rem;
 
                 .singleInfo {
-                    .number{
+                    .number {
                         background-color: var(--PrimaryColor);
                         color: var(--whiteColor);
                         border-radius: 3rem;
@@ -410,7 +411,7 @@ h2 {
                         font-weight: 700;
                     }
 
-                    .colorOne{
+                    .colorOne {
                         background-color: var(--colorOne);
                     }
 
@@ -422,9 +423,70 @@ h2 {
 
             .imgDiv {
                 margin: auto;
+
                 img {
                     width: 100%;
                     max-width: 420px;
+                }
+            }
+        }
+    }
+}
+
+// info
+
+.info {
+    background: var(--SecondaryColor);
+
+    .infoContainer {
+        .titlesDiv {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cardsDiv {
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            .singleCard {
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+
+                .iconDiv {
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    width: max-content;
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+
+                    .icon {
+                        color: var(--whiteColor);
+                    }
+
+                }
+
+                .cardTitle {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .colorOne {
+                    background: var(--colorOne);
+                }
+
+                .colorTwo {
+                    background: var(--colorTwo);
                 }
             }
         }
