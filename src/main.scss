@@ -617,7 +617,7 @@ h2 {
                     }
 
                     50% {
-                        border-radius: 1rem;
+                        border-radius: 0rem;
                     }
 
                     100% {
@@ -628,15 +628,47 @@ h2 {
                 &:hover {
                     .travelerName {
                         bottom: 0;
-                        transition: 1s ease-in-out;
+                        transition: .5s ease-in-out;
                     }
 
                     .travelerImage {
                         bottom: 110px;
-                        transition: 1s ease-in-out;
+                        transition: .5s ease-in-out;
                     }
                 }
             }
         }
+    }
+}
+
+// subscribe
+
+.subscribe {
+    background: var(--SecondaryColor);
+    text-align: center;
+    .inputDiv{
+        margin-top: 1rem;
+        flex-direction: column;
+        background-color: var(--whiteColor);
+        border-radius: 1rem;
+
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: center;
+            background: transparent;
+            padding: 1rem .5rem;
+
+            &::placeholder {
+                font-size: 16px;
+                opacity: .5;
+            }
+        }
+
+        .btn {
+            width: 100%;
+        }
+
     }
 }

@@ -498,7 +498,7 @@ h2 {
     border-radius: 0rem;
   }
   50% {
-    border-radius: 1rem;
+    border-radius: 0rem;
   }
   100% {
     border-radius: 0rem;
@@ -506,9 +506,39 @@ h2 {
 }
 .travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerName {
   bottom: 0;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
   bottom: 110px;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.subscribe {
+  background: var(--SecondaryColor);
+  text-align: center;
+}
+.subscribe .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background-color: var(--whiteColor);
+  border-radius: 1rem;
+}
+.subscribe .inputDiv input {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .inputDiv input::-moz-placeholder {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.subscribe .inputDiv input::placeholder {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.subscribe .inputDiv .btn {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
