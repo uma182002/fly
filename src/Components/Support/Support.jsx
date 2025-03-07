@@ -1,6 +1,6 @@
 import React from 'react'
 
-import gridimages from '../../asset/imagesgrid.png'
+import gridimages from '../../asset/imagesgrid (2).png'
 
 const Support = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // image import
-import imagegrid from '../../asset/imagegrid.png'
+import imagegrid from '../../asset/imagesGrid (3).png'
 
 const Lounge = () => {
   return (
